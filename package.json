@@ -1,25 +1,28 @@
 {
   "name": "jvm",
   "version": "1.0.0",
-  "description": "dive into jvm",
-  "main": "index.js",
+  "description": "Java 虚拟机底层原理知识总结",
   "directories": {
     "doc": "docs"
-  },
-  "scripts": {
-    "convert": "node_modules/.bin/docsify-pdf-converter"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/doocs/jvm.git"
   },
+  "keywords": [
+    "jvm"
+  ],
   "author": "yanglbme",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/doocs/jvm/issues"
   },
-  "homepage": "https://github.com/doocs/jvm#readme",
+  "homepage": "https://jvm.doocs.org",
   "devDependencies": {
-    "docsify-pdf-converter": "^2.0.7"
+    "vitepress": "^2.0.0-alpha.12"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   }
 }
